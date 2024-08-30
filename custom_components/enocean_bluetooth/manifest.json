@@ -1,0 +1,17 @@
+{
+  "domain": "enocean_bluetooth",
+  "name": "EnOcean Bluetooth",
+  "bluetooth": [
+    {
+      "manufacturer_id": 986,
+      "connectable": false
+    }
+  ],
+  "codeowners": [ "@echoes341" ],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/echoes341/ha-enocean-ble",
+  "iot_class": "local_pushing",
+  "requirements": ["pycryptodome>=3.6.6"],
+  "version": "1.0.0"
+}
