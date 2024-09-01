@@ -155,7 +155,6 @@ class EnOceanBluetoothDeviceData(BluetoothData):
 
         if data.sequence <= self._previous_seq:
             _LOGGER.error("Replay detected for %s! %s", self._commissioning.title, data)
-            return
 
         self._previous_seq = data.sequence
         self.fire_event(
